@@ -207,4 +207,4 @@ class ServerGroup(MxObject):
     try: 
       return self._connection.get_all_db_services(Site=self._Site, ServerGroup=self.Name)
     except:
-      return None
+      return []
